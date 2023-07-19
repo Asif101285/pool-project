@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>firebase</title>
+    <title>sign up</title>
     <link rel="stylesheet" href="style.css">
+
+
+
+
+
 </head>
 <body>
-
-
-
-    <div class="center-box">
-        <h2>Login</h2>
-        <input type="email" id="login-email" class="text-field" name="login-email" placeholder="Email"/>
-        <input type="password" id="login-password" class="text-field" name="login-password" placeholder="Password"/><br>
-        <button id="login-btn" class="btn-style">login</button><br>
-        <button id="reg-btn" class="an-btn" >don't have an account? REGISTER</button>
-    </div>
-
-     <div class="center-box" id="register-div">
-        <h2>Register</h2>
-        <input type="email"id="register-email" class="text-field" name="rigister-email" placeholder="Email"/>
-        <input type="password"id="rigister-password" class="text-field" name="rigister-password" placeholder="password"/><br>
-        <button id="login-button" class="btn-style">have an account? LOGIN</button>
-    </div>
-
-    <div>
-        <h2 id="result-view"></h2>
-    </div>
-
-    <script type="module" src="main.js"></script>
-
     
+   <div class="signup">
+       <!--email-->
+       <form class="email" id="form">
+           <label for="email">email</label>
+           <input type="email"name="email" id="email"
+            placeholder="abc@gmail.com"
+            required>
+
+       
+       <!--password-->
+       <div class="password">
+        <label for="password">password</label>
+        <input type="password"
+        name="password"
+        id="password"
+        placeholder="enter your password"
+        minlength="6"
+        required>
+
+       </div>
+
+       <!--sign up button-->
+       <div class="inputBox">
+        <input type="submit" value="signup" id="btn">
+      </div>
+       </form>
+
+       <div class="group">
+        <p>Already Have Account?</p>
+        <a href="./login.html">Sign In</a>
+      </div>
+        
+   </div>
+
+   <script type="module" src="app.js"></script>
+
+
 </body>
 </html>
